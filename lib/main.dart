@@ -23,9 +23,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: Login.routeName,
       routes: {
+
         Login.routeName: (context) => Login(),
         SliderScreen.routeName: (context) => SliderScreen(),
-        XoGame.routeName: (context) => XoGame(),
+        XoGame.routeName: (context) => const XoGame(),
       },
     );
   }

@@ -14,7 +14,7 @@ class _SliderScreenState extends State<SliderScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue.shade500,
-        title: Text("Slider"),
+        title: const Text("Slider"),
       ),
       body: Column(
         children: [
@@ -32,9 +32,9 @@ class _SliderScreenState extends State<SliderScreen> {
                     }
                     setState(() {});
                   },
-                  child: Icon(Icons.arrow_back_ios),
+                  child: const Icon(Icons.arrow_back_ios),
                 ),
-                Spacer(),
+                const Spacer(),
                 FloatingActionButton(
                   onPressed: () {
                     index++;
@@ -43,7 +43,7 @@ class _SliderScreenState extends State<SliderScreen> {
                     }
                     setState(() {});
                   },
-                  child: Icon(Icons.arrow_forward_ios),
+                  child: const Icon(Icons.arrow_forward_ios),
                 ),
               ],
             ),
